@@ -1,0 +1,129 @@
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+:root {
+	--main-background: hsl(233, 47%, 7%);
+	--card-background: hsl(244, 38%, 16%);
+	--accent: hsl(277, 64%, 61%);
+	--White: hsl(0, 0%, 100%);
+	--whiteText: hsla(0, 0%, 100%, 0.75);
+	--whiteHead: hsla(0, 0%, 100%, 0.6);
+	font-size: 15px;
+}
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+body {
+	background: var(--main-background);
+	color: var(--whiteText);
+	font-family: "Inter", sans-serif;
+	height: 100vh;
+}
+
+.container {
+	min-height: 500px;
+	max-height: 1200px;
+	background: var(--card-background);
+	margin: 4rem 1.5rem;
+	border-radius: 10px;
+	padding-bottom: 1rem;
+}
+
+.img-container {
+	background-color: var(--accent);
+	height: 240px;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+.img-container picture img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+}
+
+.container .article {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+.container .article h1 {
+	font-size: 2rem;
+	margin: 1rem;
+}
+.container .article .main-para {
+	font-size: 1.1rem;
+	margin: 1rem;
+}
+.stats {
+	margin: 1.5rem;
+}
+.stat {
+	margin: 1rem;
+}
+.stat h2 {
+	margin: 0.3rem;
+}
+.stat p {
+	color: var(--whiteHead);
+}
+
+@media (min-width: 768px) {
+    .stats{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+}
+
+@media (min-width: 920px) {
+    *{
+        text-align: start;
+    }
+	.container {
+		min-height: 700px;
+        max-width: 1465px;
+		padding-bottom: 0rem;
+        text-align: start;
+	}
+	.img-container {
+		float: right;
+		width: 50%;
+		height: 700px;
+		border-radius: 0 10px 10px 0;
+	}
+	.img-container picture img {
+		border-radius: 0 10px 10px 0;
+	}
+	.container .article {
+        align-items: flex-start;
+        min-height: 700px;
+        padding: 3rem;
+	}
+    .stats{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+}
