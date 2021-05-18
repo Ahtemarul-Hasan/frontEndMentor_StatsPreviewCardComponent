@@ -7,7 +7,9 @@ It is not really the best solution. It has many shortcomings. But I tried my bes
 
 I am fairly new to UI/UX. and I hate css.
 
-[Site Link](https://frontendmentor_StatsPreviewCardComponentSolution.netlify.app)
+[Site Link](https://ahtemarul-hasan.github.io/frontEndMentor_StatsPreviewCardComponent/)
+
+
 [Myself](https://www.frontendmentor.io/profile/Ahtemarul-Hasan)
 
 ## What I learned?
